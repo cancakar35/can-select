@@ -1,0 +1,118 @@
+.hidden {
+  display: none;
+}
+
+.can-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.can-select-wrapper .can-select-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 2.5rem;
+  border: 1px solid rgb(9 9 11 / 0.2);
+  border-radius: 0.25rem;
+  background-color: #fff;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.can-select-wrapper .can-select-button:hover {
+  border-color: #4338ca;
+}
+
+.can-select-wrapper .can-select-button:focus {
+  outline-width: 2px;
+  outline-offset: 2px;
+  border-color: #000;
+  isolation: isolate;
+}
+
+.can-select-wrapper .can-select-button > .can-select-button-placeholder {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgb(0 0 0 / 0.5);
+}
+
+.can-select-dropdown {
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  margin: 0;
+}
+
+.can-select-search-wrapper {
+  padding: 0.5rem;
+  border-bottom-width: 1px;
+  border-color: #e5e7eb;
+}
+
+input.can-select-search-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #111827;
+  transition: all 150ms ease-in-out;
+}
+
+input.can-select-search-input::placeholder {
+  color: #9ca3af;
+}
+input.can-select-search-input:focus {
+  outline: none;
+  border-color: #4338ca;
+}
+
+.can-select-listbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0.25rem;
+  width: 100%;
+  list-style-type: none;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.25rem;
+  max-height: 14rem;
+  overflow-y: auto;
+}
+
+.can-select-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.can-select-option:hover {
+  background-color: #f3f4f6;
+}
+
+.can-select-option .can-select-tick {
+  font-weight: 700;
+  color: #4338ca;
+  opacity: 0;
+}
+
+.can-select-option.can-select-option-selected {
+  background-color: rgb(99 102 241 / 0.2);
+  color: #4338ca;
+}
+
+.can-select-option.can-select-option-selected > .can-select-tick {
+  opacity: 1;
+}

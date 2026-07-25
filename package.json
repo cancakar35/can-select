@@ -1,0 +1,51 @@
+{
+  "name": "can-select",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "HTML searchable multi select",
+  "author": {
+    "name": "Can Çakar",
+    "url": "https://github.com/cancakar35"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.0.9",
+      "onFail": "download"
+    }
+  },
+  "scripts": {
+    "dev": "vite --config vite.demo.config.ts",
+    "build:demo": "vite build --config vite.demo.config.ts",
+    "build": "vite build",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@microsoft/api-extractor": "^7.58.12",
+    "eslint": "^10.8.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.6",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.65.0",
+    "unplugin-dts": "^1.0.3",
+    "vite": "^8.1.5"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.8.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/can-select.umd.js",
+  "module": "./dist/can-select.es.js",
+  "types": "./dist/CanSelect.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/can-select.es.js",
+      "require": "./dist/can-select.umd.js"
+    },
+    "./package.json": "./package.json",
+    "./can-select.css": "./dist/can-select.css"
+  }
+}

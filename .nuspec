@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>CanSelect</id>
+    <version>1.0.0</version>
+    <authors>Can Çakar</authors>
+    <description>HTML searchable multi select</description>
+    <license type="expression">MIT</license>
+    <contentFiles>
+      <files include="**/*" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="dist\**\*.*" target="content\Content" />
+    <file src="dist\**\*.*" target="contentFiles\any\any\wwwroot\lib" />
+  </files>
+</package>

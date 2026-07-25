@@ -1,0 +1,26 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+tab_width = 4
+
+[*.{js,ts,html,css,mjs,json,xml,config,yml}]
+indent_size = 2
+
+[.nuspec]
+indent_size = 2
+
+[.prettierrc]
+indent_size = 2
+
+[*.{ts,js,mjs}]
+quote_type = single
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
