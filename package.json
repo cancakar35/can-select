@@ -18,8 +18,7 @@
     "dev": "vite --config vite.demo.config.ts",
     "build:demo": "vite build --config vite.demo.config.ts",
     "build": "vite build",
-    "lint": "eslint .",
-    "prepack": "pnpm build"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
