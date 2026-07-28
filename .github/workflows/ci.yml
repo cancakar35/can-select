@@ -38,7 +38,7 @@ jobs:
       - name: Run Vite Build
         run: pnpm run build
       - name: Publish to npm
-        run: pnpm publish --tag ${{ steps.tag.outputs.version_tag }}
+        run: pnpm publish --tag ${{ steps.tag.outputs.version_tag }} --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Create GitHub Release
