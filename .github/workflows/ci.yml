@@ -40,7 +40,7 @@ jobs:
       - name: Publish to npm
         run: pnpm publish --tag ${{ steps.tag.outputs.version_tag }}
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
