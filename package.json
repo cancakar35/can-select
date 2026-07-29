@@ -1,6 +1,6 @@
 {
   "name": "@cancakar/can-select",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "type": "module",
   "description": "HTML searchable multi select",
   "author": {
