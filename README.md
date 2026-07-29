@@ -1,4 +1,5 @@
-# can-select ![Build](https://github.com/cancakar35/can-select/actions/workflows/ci.yml/badge.svg) ![NPM Version](https://img.shields.io/npm/v/%40cancakar%2Fcan-select?color=%23007EC6)
+# can-select ![Build](https://github.com/cancakar35/can-select/actions/workflows/ci.yml/badge.svg) <a href="https://www.npmjs.com/package/@cancakar/can-select"><img alt="NPM Version" src="https://img.shields.io/npm/v/%40cancakar%2Fcan-select?color=%23007EC6"></a>
+
 
 ## Installation
 
