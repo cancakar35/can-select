@@ -4,6 +4,10 @@
   "license": "MIT",
   "type": "module",
   "description": "HTML searchable multi select",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cancakar35/can-select.git"
+  },
   "author": {
     "name": "Can Çakar",
     "url": "https://github.com/cancakar35"
