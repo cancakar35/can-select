@@ -20,7 +20,9 @@ pnpm add @cancakar/can-select
 
 #### ESM
 ```javascript
-import CanSelect from '@cancakar/can-select';
+import { CanSelect } from '@cancakar/can-select';
+
+import "@cancakar/can-select/can-select.css" // or @import "@cancakar/can-select/can-select.css" in your css file
 ```
 
 #### Browser
