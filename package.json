@@ -4,6 +4,12 @@
   "license": "MIT",
   "type": "module",
   "description": "HTML searchable multi select",
+  "keywords": [
+    "select",
+    "multiselect",
+    "canselect",
+    "ui"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cancakar35/can-select.git"
