@@ -6,4 +6,4 @@ document.addEventListener('DOMContentLoaded', function () {
     .map((el) => new CanSelect(el));
 });
 
-export default CanSelect;
+export { CanSelect };
