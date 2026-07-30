@@ -58,7 +58,7 @@ jobs:
             $([ "${{ steps.tag.outputs.version_tag }}" != "latest" ] && echo "--prerelease")
 
       - name: Pack for nuget
-        run: dotnet pack .\.nuspec -o .\nupkg
+        run: dotnet pack ./.nuspec -o ./nupkg
       - name: NuGet login
         uses: NuGet/login@v1
         id: nugetlogin
@@ -66,7 +66,7 @@ jobs:
           user: ${{ secrets.NUGET_USER }}
       - name: Publish to nuget
         run: |
-          dotnet nuget push .\nupkg\*.nupkg \
+          dotnet nuget push ./nupkg/*.nupkg \
             --source https://api.nuget.org/v3/index.json \
             --api-key ${{ steps.nugetlogin.outputs.NUGET_API_KEY }} \
             --skip-duplicate
