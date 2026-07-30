@@ -34,6 +34,14 @@ jobs:
           registry-url: "https://registry.npmjs.org"
           cache: "pnpm"
           package-manager-cache: false
+      - name: Setup dotnet CLI
+        uses: actions/setup-dotnet@v6
+        with:
+            dotnet-version: latest
+            dotnet-channel: LTS
+        env:
+          DOTNET_NOLOGO: true
+          DOTNET_CLI_TELEMETRY_OPTOUT: true
       - name: Install dependencies
         run: pnpm install
       - name: Run Vite Build
@@ -48,3 +56,12 @@ jobs:
             --title "${{ github.ref_name }}" \
             --generate-notes \
             $([ "${{ steps.tag.outputs.version_tag }}" != "latest" ] && echo "--prerelease")
+
+      - name: Pack for nuget
+        run: dotnet pack .\.nuspec -o .\nupkg
+      - name: Publish to nuget
+        run: |
+          dotnet nuget push .\nupkg\*.nupkg \
+            --source https://api.nuget.org/v3/index.json \
+            --api-key ${{ secrets.NUGET_API_KEY }} \
+            --skip-duplicate
