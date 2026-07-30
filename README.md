@@ -14,8 +14,9 @@ pnpm add @cancakar/can-select
 ```
 
 **nuget (for .NET projects)**
-
-....
+```bash
+dotnet add package CanSelect
+```
 
 
 
