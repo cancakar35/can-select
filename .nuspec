@@ -9,12 +9,12 @@
     <repository type="git" url="https://github.com/cancakar35/can-select" />
     <readme>docs\README.md</readme>
     <contentFiles>
-      <files include="**/*" buildAction="None" copyToOutput="true" />
+      <files include="**/*" buildAction="Content" />
     </contentFiles>
   </metadata>
   <files>
-    <file src="dist\**\*.*" target="content\Content" />
-    <file src="dist\**\*.*" target="contentFiles\any\any\wwwroot\lib" />
+    <file src="dist\**\*.*" target="content\Content\can-select" />
+    <file src="dist\**\*.*" target="contentFiles\any\any\wwwroot\lib\can-select" />
     <file src="README.md" target="docs\" />
   </files>
 </package>
