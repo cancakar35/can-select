@@ -53,6 +53,7 @@
   "main": "./dist/can-select.umd.js",
   "module": "./dist/can-select.es.js",
   "types": "./dist/CanSelect.d.ts",
+  "style": "./dist/can-select.css",
   "exports": {
     ".": {
       "import": "./dist/can-select.es.js",
