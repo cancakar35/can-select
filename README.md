@@ -18,7 +18,7 @@ pnpm add @cancakar/can-select
 dotnet add package CanSelect
 ```
 
-
+## Setup
 
 #### ESM
 ```javascript
@@ -34,6 +34,16 @@ import "@cancakar/can-select/can-select.css" // or @import "@cancakar/can-select
 
 <script src="can-select.umd.js"></script>
 ```
+
+#### CDN
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@cancakar/can-select/dist/can-select.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@cancakar/can-select/dist/can-select.umd.min.js"></script>
+```
+
+**! Use a pinned version in production.**
 
 ## Usage
 
