@@ -1,4 +1,4 @@
-# can-select ![Build](https://github.com/cancakar35/can-select/actions/workflows/ci.yml/badge.svg) [![NPM Version](https://img.shields.io/npm/v/%40cancakar%2Fcan-select?color=%23007EC6)](https://www.npmjs.com/package/@cancakar/can-select) [![NuGet](https://img.shields.io/nuget/v/CanSelect)](https://www.nuget.org/packages/CanSelect) [![](https://data.jsdelivr.com/v1/package/npm/@cancakar/can-select/badge?style=rounded)](https://www.jsdelivr.com/package/npm/@cancakar/can-select)
+# can-select ![Build](https://github.com/cancakar35/can-select/actions/workflows/ci.yml/badge.svg) [![NPM Version](https://img.shields.io/npm/v/%40cancakar%2Fcan-select?color=%23007EC6)](https://www.npmjs.com/package/@cancakar/can-select) [![NuGet](https://img.shields.io/nuget/v/CanSelect)](https://www.nuget.org/packages/CanSelect) [![jsdelivr badge](https://data.jsdelivr.com/v1/package/npm/@cancakar/can-select/badge?style=rounded)](https://www.jsdelivr.com/package/npm/@cancakar/can-select)
 
 
 ## Installation
